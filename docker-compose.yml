@@ -1,0 +1,18 @@
+version: "3"
+services:
+  web:
+    image: nginx
+    links:
+      - gitbook_name
+    volumes:
+      - ./nginx/gitbook_name.conf:/etc/nginx/conf.d/gitbook_name.conf:ro
+      - ./nginx:/etc/nginx/ssl/
+      - ./log/nginx:/var/log/nginx/
+    ports:
+      - 80:80
+      - 443:443
+
+  kbase:
+    image: denley/gitbook_name
+    expose:
+      - 4000
