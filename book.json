@@ -1,0 +1,41 @@
+{
+  "root": "source",
+  "language": "zh-hans",
+  "plugins": [
+    "github",
+    "image-captions",
+    "prism", "-highlight", "prism-themes",
+    "splitter",
+    "expandable-chapters-small",
+    "-sharing",
+    "-lunr", "-search", "search-plus",
+    "anchor-navigation-ex",
+    "todo",
+    "page-treeview"
+  ],
+  "pluginsConfig": {
+    "github": {
+      "url": "https://github.com/denleyhsiao/kbase"
+    },
+    "image-captions": {
+      "attributes": {
+        "width": "600"
+      },
+      "caption": "图 _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_"
+    },
+    "prism": {
+      "css": ["prism-themes/themes/prism-cb.css"]
+    },
+    "theme-default": {
+      "showLevel": true
+    },
+    "page-treeview": {
+      "copyright": "Copyright &#169; aleen42",
+      "minHeaderCount": "2",
+      "minHeaderDeep": "2"
+    }
+  },
+  "structure": {
+    "readme": "README.md"
+  }
+}
