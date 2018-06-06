@@ -1,2 +1,2 @@
-# gitbook_name
-本书简介
+# DenleyHsiao的知识库
+主要是对知识的统一管理，偏向于技术、操作、流程

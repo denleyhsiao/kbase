@@ -3,9 +3,9 @@ services:
   web:
     image: nginx
     links:
-      - gitbook_name
+      - kbase
     volumes:
-      - ./nginx/gitbook_name.conf:/etc/nginx/conf.d/gitbook_name.conf:ro
+      - ./nginx/kbase.conf:/etc/nginx/conf.d/kbase.conf:ro
       - ./nginx:/etc/nginx/ssl/
       - ./log/nginx:/var/log/nginx/
     ports:
@@ -13,6 +13,6 @@ services:
       - 443:443
 
   kbase:
-    image: denley/gitbook_name
+    image: denley/kbase
     expose:
       - 4000
