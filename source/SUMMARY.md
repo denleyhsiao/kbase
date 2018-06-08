@@ -31,6 +31,7 @@
   * [Vagrant使用](_posts/tool/vagrant.md)
   * [PC-Lint使用](_posts/tool/pc_lint.md)
   * [k8s总结](_posts/tool/k8s.md)
+  * [远程访问](_posts/tool/remote_access.md)
 * [杂项](dropdown.md)
     * [安装Google Play](_posts/misc/google_play.md)
     * [笑一笑](_posts/misc/smile.md)
