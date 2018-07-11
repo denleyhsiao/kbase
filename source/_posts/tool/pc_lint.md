@@ -23,7 +23,7 @@ C/C++语言的灵活性带来了代码效率的提升，但也因其灵活性而
 
 # 配置 
 文件解压后可以看到如下文件：(解压目录为E:\Work\DevLib\pclint,以下将用$(PC-Lint)代替)  
-![](../../images/PCLint-Directory.JPG)
+![](/assets/images/PCLint-Directory.JPG)
 
 可以使用Config.exe的向导功能配置个针对自个环境的lnt文件，我这里是直接编辑文本文件std.lnt，保存在$(PC-Lint)目录下，其中VC6的安装目录为：`d:\Program Files\Microsoft Visual Studio\VC98。std.lnt`内容如下： 
 

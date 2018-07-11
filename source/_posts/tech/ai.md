@@ -6,7 +6,7 @@ categories:
 - AI
 ---
 
-![](../../images/How_to_learn_ai.jpg)
+![](/assets/images/How_to_learn_ai.jpg)
 
 <!-- More -->
 

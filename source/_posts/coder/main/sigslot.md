@@ -7,7 +7,7 @@ tags: [C++,Third-Party]
 
 &emsp;&emsp;sigslot是一个基于信号槽机制的C++库，适用于对象之间的通信。  
 
-![Sigslot通信](../../../images/sigslot/Sigslot.png)
+![Sigslot通信](/assets/images/sigslot/Sigslot.png)
 
 <!-- More -->
 
@@ -26,7 +26,7 @@ tags: [C++,Third-Party]
 &emsp;&emsp;现在从实际代码开始：（L21---L320）  
 1. 6个类：包括2个接口类（_signal_base, _connection_baseN)，2个抽象类（has_slots, _signal_baseN），2个实现类（signalN, _connectionN），关系如下所示：  
 
-![Sigslot类图](../../../images/sigslot/SigslotClasses.png)  
+![Sigslot类图](/assets/images/sigslot/SigslotClasses.png)  
 
 
 说明：Company/Customer是单元测试用例中通信的发布/订阅方，Client是调用发起方；  
@@ -37,17 +37,17 @@ tags: [C++,Third-Party]
 
 * disconnect_all/disconnect方法用于断开连接关系；
   
-![断开连接](../../../images/sigslot/SignalDisconnect.png)    
+![断开连接](/assets/images/sigslot/SignalDisconnect.png)    
 
 
 * has_slots#signal_connect方法用于在signalN#connect的同时建立槽到信号的反向连接关系；  
 
-![建立连接](../../../images/sigslot/connect.png)  
+![建立连接](/assets/images/sigslot/connect.png)  
 
 这样建立起来的双向连接，可以在信号/槽对象销毁时，通过signal_disconnect/slot_disconnect方法主动断开与对方的连接，避免后续emit时碰到“野指针”的情形；  
 * clone/duplicate/slot_duplicate方法用于对信号/槽进行拷贝/赋值时，其中的信号槽关系也能同步过去。  
 
-![复制关系](../../../images/sigslot/clone.png)    
+![复制关系](/assets/images/sigslot/clone.png)    
 
 有人认为这不是库应该做的事情，可以在需要的时候自行connect；但我不这么认为：首先，它真正体现了拷贝/赋值的含义，然后，就是当其connect很多slot的时候，一个个自行增加很麻烦（有些可能还不在当前上下文中），但我们不需要此功能时，完全可以disconnect_all/disconnect就可以了。
 
@@ -77,15 +77,15 @@ tags: [C++,Third-Party]
 * <font color="red">如何消除0-8个参数的模板特化中的大部分重复代码；</font>  
 * emit与operator()代码重复；  
 
-  ![emit与operator()](../../../images/sigslot/emit.png)
+  ![emit与operator()](/assets/images/sigslot/emit.png)
   
 * L193-L212: 通过容器迭代器删除元素时，后续操作还能进行吗?  
   
-  ![删除元素](../../../images/sigslot/SlotDisconnect.png)  
+  ![删除元素](/assets/images/sigslot/SlotDisconnect.png)  
   
 	可以进行后续删除操作，因为这里使用的是list容器，具体参考《Effective STL》第9条款；
 * L222-L226: 成员变量应是m_pobject, m_pmemfun；  
 
-  ![成员变量](../../../images/sigslot/connectN.png)
+  ![成员变量](/assets/images/sigslot/connectN.png)
 
 附：[sigslot源代码分析](https://my.oschina.net/tianxialangui/blog/67005)
