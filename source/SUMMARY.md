@@ -38,3 +38,6 @@
     * [Sigslot库](_posts/coder/main/sigslot.md)
     * [leveldb库](_posts/coder/main/leveldb.md)
     * [书籍推荐](_posts/coder/appendix/books.md)
+* [晓月刀说](_posts/say/preface.md)
+    * [谁是养猫人](_posts/say/whose_cat.md)
+    * [机器人源码分析](_posts/say/ros_code.md)
