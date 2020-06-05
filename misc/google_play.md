@@ -2,7 +2,6 @@
 title:  "安装Google Play"
 date:   2017-10-05 9:00:00
 categories: 杂项
-tags: [Firewall]
 ---
 
 为了能在手机上安装Google play,不得不打开ROOT权限，以下是本人在SM-G5510手机上的操作过程。
@@ -53,12 +52,3 @@ tags: [Firewall]
 1. 安装Mac版本的[S换机助手](http://www.samsung.com/cn/apps/smart-switch/);
 2. 安装后打开软件，单击`Galaxy On5 2016青春版`右边的下拉按钮，再单击`内部存储器`的右边文件夹;
 3. 在显示的目录树中找到目标文件，拖动到Mac Air下，就完成了文件的传输.
-
-# 翻墙工具
- * [目前使用的VPN](https://cloud.digitalocean.com)
- * [Docker + DigitalOcean + Shadowsocks 5分钟科学](http://blog.sina.com.cn/s/blog_6d95ca170102x71b.html)
- * 各平台下的[ShadowSocks客户端下载](https://blog.csdn.net/weixin_41557898/article/details/81083114)
- * 可以考虑的[Nord VPN](https://join.nord-for-china.com/zh/order/?coupon=3yholiday): $99/3年
- * [web hosts](https://laod.org/hosts/2016-google-hosts.html)
- * [github hosts](https://github.com/racaljk/hosts)
- * 不能翻的情况下可以使用biying,bilibili找资料，视频
